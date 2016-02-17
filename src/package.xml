@@ -237,6 +237,7 @@
         <members>UTIL_UnitTestData_TEST</members>
         <members>UTIL_Version_API</members>
         <members>UTIL_iSoqlListViewConsumer</members>
+        <members>RecurringDonationsAllocationLimitTest</members>
         <name>ApexClass</name>
     </types>
     <types>
