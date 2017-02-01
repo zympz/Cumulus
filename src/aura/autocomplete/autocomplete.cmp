@@ -1,7 +1,6 @@
 <aura:component >
-
     <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
-    <aura:handler name="optionSelected" event="c:autocompleteSelectListOption" action="{!c.handleOptionSelected}"/>
+    <aura:handler name="optionSelected" event="c:autocompleteSelectListOption" action="{!c.handleOptionSelected}" />
 
     <aura:attribute name="items" type="Object[]" default="[]" access="private"/>
     <aura:attribute name="keyword" type="String" access="private"/>
@@ -19,7 +18,7 @@
     <aura:method name="clearList" action="{!c.clearList}" access="public" />
 
     <aura:attribute name="itemTemplate" type="Aura.ComponentDefRef[]" access="public">
-        <c:autocompleteOption value="{!item}" displayValue="{!item}"/>
+        <c:autocompleteOption value="{!item.value}" displayValue="{!item.label}"/>
     </aura:attribute>
 
     <aura:attribute name="listFooter" type="Aura.Component[]" description="A facet below the rendered list, for use as a list footer" access="public"/>
@@ -31,7 +30,7 @@
 
     <div class="slds" aura:id="autocomplete">
         <div
-             class="{!'slds-lookup ' + (and(!empty(v.value), !empty(v.displayValue)) ? 'slds-has-selection' : '')}"
+             class="slds-lookup"
              data-select="single"
              data-scope="single"
              data-typeahead="true">
@@ -40,10 +39,9 @@
                     <label class="slds-form-element__label">{!v.label}</label>
                 </aura:if>
                 <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon--right">
-                    <lightning:icon iconName="utility:search" 
-                        class="slds-input__icon slds-icon-text-default" size="x-small"/>
+                    <lightning:icon iconName="utility:search" class="slds-input__icon slds-icon-text-default" size="x-small"/>
                     <ui:inputText aura:id="input"
-                                  class="{!'slds-input ' + (and(!empty(v.value), !empty(v.displayValue)) ? 'slds-hide' : '')}"
+                                  class="slds-input"
                                   placeholder="{!v.placeholder}"
                                   value="{!v.displayValue}"
                                   updateOn="keyup"
@@ -55,7 +53,7 @@
                 <aura:if isTrue="{!v.showListHeader}">
                     <div class="slds-lookup__item">
                         <span>
-                            <lightning:icon iconName="utility:search" class="slds-icon-text-default" size="small"/>
+                            <lightning:icon iconName="utility:search" class="slds-icon-text-default" size="x-small"/>
                             &quot;{!v.keyword}&quot; {!if(!empty(v.searchContext), v.searchContext, '')}
                         </span>
                     </div>
