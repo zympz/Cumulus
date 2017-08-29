@@ -1,0 +1,11 @@
+{
+  "orgName": "NPSP - Feature Parallel Test Org",
+  "edition": "Developer",
+  "orgPreferences" : {
+    "enabled": [
+      "ChatterEnabled",
+      "S1DesktopEnabled",
+      "Translation"
+    ]
+  }
+}

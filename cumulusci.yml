@@ -286,3 +286,5 @@ orgs:
             config_file: orgs/beta_multicurrency.json
         browsertest_classic:
             config_file: orgs/browsertest_classic.json
+        feature_parallel:
+            config_file: orgs/feature_parallel.json
