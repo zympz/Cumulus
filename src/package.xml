@@ -1083,7 +1083,17 @@
         <members>campaignMemberStatusNonResponded</members>
         <members>campaignMemberStatusResponded</members>
         <members>conFailedAccountCreate</members>
+        <members>conMergeBtnLabel</members>
         <members>conMergeErrNoPersonAccounts</members>
+        <members>conMergeFoundContacts</members>
+        <members>conMergePageTitle</members>
+        <members>conMergePageTitleDetail</members>
+        <members>conMergeSearchPlaceholder</members>
+        <members>conMergeSelectAll</members>
+        <members>conMergeSelectContact</members>
+        <members>conMergeSelectedContacts</members>
+        <members>conMergeStageComplete</members>
+        <members>conMergeWinnerAsstText</members>
         <members>engagementPlanCantEdit</members>
         <members>engagementPlanNoLookups</members>
         <members>engagementPlanTwoLookups</members>
@@ -1238,6 +1248,7 @@
         <members>lblCountry</members>
         <members>lblDeleteContact</members>
         <members>lblDeleteContactPrompt</members>
+        <members>lblExtendedStatus</members>
         <members>lblFindInContacts</members>
         <members>lblFindOrAddContact</members>
         <members>lblFirstName</members>
@@ -1251,6 +1262,8 @@
         <members>lblNPSPSettings</members>
         <members>lblNoHHMergePermissions</members>
         <members>lblPostalCode</members>
+        <members>lblProgress</members>
+        <members>lblStatus</members>
         <members>lblRequired</members>
         <members>lblSalutation</members>
         <members>lblState</members>
